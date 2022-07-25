@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #declarando os apps que contem na aplicação
+    'Dashboard',
 ]
 
 MIDDLEWARE = [
