@@ -1,0 +1,15 @@
+/* import da font Google */
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Molengo', sans-serif;
+}
+
+#bg-image {
+    background-size: 100%;
+    /* image-rendering: pixelated; */
+}
+/* 
+body 
+    /* background-image: image(({% static '' %})); */
+    
