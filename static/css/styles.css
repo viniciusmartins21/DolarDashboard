@@ -1,0 +1,14 @@
+:root{
+    --bg-card-principal: rgb(41, 35, 94);
+    --opacidade-card-principal: .5;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+
+.bg-test {
+    background-color: var(--bg-card-principal);
+}
+

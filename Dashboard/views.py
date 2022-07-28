@@ -7,3 +7,7 @@ def home(request):
     return render(request, 'home/pages/home.html')
 
 
+def details(request, id):
+    return render(request, 'home/pages/home.html')
+
+

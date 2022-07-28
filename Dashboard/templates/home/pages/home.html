@@ -2,39 +2,73 @@
 {% load static %}
 
 
-<body id="bg-image" style="background-image: url('{% static 'images/mackenzie-Dolars.png'%}'); ">
+<body style="background-image: url('{% static 'images/mackenzie-Dolars.png'%}'); ">
 
-    <div class="container-fluid text-center py-5 d-flex justify-content-center">
+    <div class="container-fluid text-center d-flex justify-content-center mt-5">
+        
+        <div class="row col-10 bg-test border-1 border-white border border-opacity-25 rounded-2">
 
-        <div class="row col-10 bg-body">
-
-            <div class="py-1 fs-2">
-
-                <i class="fa-solid fa-dollar-sign"></i>
-                <i class="fa-solid fa-money-bill-transfer px-1"></i>
-                <i class="fa-solid fa-brazilian-real-sign "></i>
+            <div class="py-1 fs-3 mx-auto">
+                
+                <i class="fa-solid fa-dollar-sign text-success"></i>
+                <i class="fa-solid fa-money-bill-transfer px-1 text-info"></i>
+                <i class="fa-solid fa-brazilian-real-sign text-success"></i>
             </div>
             
-            <div class="container">
+            <div class="container py-4">
 
-                <h1>Histórico Cotação Dolar</h1>
+                <h1 class="text-white">Analise Dolar</h1>
+                
             </div>
             
-            <p>fefefefefefefefefefefefefe</p>
+            <div class="row-cols-11 d-flex justify-content-between text-white-50">
             
-            
-            
+                <!-- botão para abrir menu lateral e visualizar as opçoes de cotação dolar -->
+                <div class="col-5 bg-danger">
+                
+                    <button class="btn btn-primary d-flex " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Alterar data de cotação</button>
+                        
+                    <button class="btn btn-primary d-grid" type="button" >Alterar data de cotação</button>
+                </div>
+
+                
+                
+                <!-- barra lateral com os periodos de cotação -->
+                <div class="offcanvas offcanvas-start bg-test" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h3 class="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">Selecione o periodo para cotação</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="d-grid gap-3 my-4" role="group" aria-label="Vertical button group">
+                    <button type="button" class="btn btn-success p-3 mx-3"> 7 dias </button>
+                    <button type="button" class="btn btn-success p-3 mx-3"> 14 dias </button>
+                    <button type="button" class="btn btn-success p-3 mx-3"> 21 dias </button>
+                    
+                  </div>
+                </div>
+                <!-- barra lateral com os periodos de cotação -->
+                
+                
+                
+                <!-- graficos apresentados  -->
+                <div class="col-6 ">
+                    <div class="card text-center" style="width: 100%">
+                        <img src="{% static 'images/grafico-exemplo.jpg'%}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
+        
+        
+        
     </div>
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
