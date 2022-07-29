@@ -2,6 +2,7 @@
     --bg-card-principal: rgba(34, 83, 28, .8);
     --opacidade-card-principal: .5;
     --cor-botão: #08C862;
+    --cor-botão-vermelho: #b42b21;
 }
 
 body {
@@ -11,9 +12,18 @@ body {
 
 .bg-test {
     background-color: var(--cor-botão);
+    opacity: .9;
+}
+
+.shadow-opacity {
+    box-shadow: -1px 1px 3px rgba(73, 73, 73, .85);
 }
 
 
 .bg-color {
     background-color: var(--cor-botão);
+}
+
+.bg-botao-vermelho{
+    background-color: var(--cor-botão-vermelho);
 }
