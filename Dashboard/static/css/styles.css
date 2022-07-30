@@ -16,7 +16,7 @@ body {
 }
 
 .shadow-opacity {
-    box-shadow: -1px 1px 3px rgba(73, 73, 73, .85);
+    box-shadow: 2px 2px 1px 0.5px  rgba(73, 73, 73, .95);
 }
 
 
