@@ -1,21 +1,23 @@
+from urllib import request
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from utils.set_datetime import make_cotation
+
+    
+
 
 # Create your views here.
+    
+    
 def home(request):
-    return render(request, 'home/pages/home.html')
+    return render(request, 'home/pages/home.html', context={
+        'dolars': [make_cotation() for _ in range(2)],
+    })
 
 
 def cotacao_sete(request, id):
-    return render(request, 'home/pages/dolar-sete-dias.html')
-
-
-def cotacao_catorze(request, id):
-    return render(request, 'home/pages/dolar-catorze-dias.html')
-
-
-def cotacao_vinte_um(request, id):
-    return render(request, 'home/pages/dolar-vinte-um-dias.html')
-
+    return render(request, 'home/pages/dolar-sete-dias.html', context={
+        'dolar': [make_cotation() for _ in range(8)],
+    })
 
