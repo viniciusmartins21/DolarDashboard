@@ -1,4 +1,5 @@
 from random import randint
+from sre_parse import DIGITS
 from faker import Faker
 
 
@@ -13,6 +14,7 @@ def make_cotation():
         'data': fake.date(),
         'hora': fake.time(),
         'preco': fake.pricetag(),
+        'id': fake.pyint(),
     }
     
 if __name__ == '__main__':
